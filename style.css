@@ -1,0 +1,30 @@
+body {
+  background-color: #000;
+  color: #33ff33;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+.terminal {
+  max-width: 800px;
+  margin: auto;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
