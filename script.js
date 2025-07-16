@@ -1,6 +1,6 @@
 const lines = [
-  "> HeartOS v2.0.1 - Personalized for Poorvi ❤️",
-  "> Author: Ghanshyam Singh 🧑‍💻",
+  "> HeartOS v2.0.1 - Personalized for her_name ❤️",
+  "> Author: Your_Name 🧑‍💻",
   "",
   "> booting HeartOS...",
   "> checking emotional modules...",
@@ -11,9 +11,9 @@ const lines = [
   "",
   "> FOUND: tone.misinterpretationException",
   "> patching... 💖",
-  "> deploying better_version.ghanshyam()",
+  "> deploying better_version.your_name()",
   "",
-  "> logs saved to: /memories/poorvi/laughter.log",
+  "> logs saved to: /memories/her_name/laughter.log",
   "> run program: smile.exe ?",
   "",
   "> Would you like to continue this connection? (yes/no)"
@@ -44,7 +44,7 @@ input.addEventListener("keydown", function (e) {
     switch (command) {
       case "yes":
         output.innerHTML += "> syncing hearts... ❤️ completed.\n";
-        output.innerHTML += "> Love you my cutie, my bacha.\n";
+        output.innerHTML += "> Our love still alive.\n";
         break;
       case "no":
         output.innerHTML += "> closing session... but love.exe is still running in background.\n";
@@ -52,10 +52,10 @@ input.addEventListener("keydown", function (e) {
       case "smile":
         output.innerHTML += "> launching smile.exe... 😊\n";
         break;
-      case "poorvi":
+      case "her_name":
         output.innerHTML += "> You are the root user of this heart system. 👑\n";
         break;
-      case "ghanshyam":
+      case "your_name":
         output.innerHTML += "> The loyal developer who cares deeply. 🧑‍💻\n";
         break;
       default:
