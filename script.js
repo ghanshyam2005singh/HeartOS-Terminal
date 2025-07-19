@@ -1,22 +1,22 @@
 const lines = [
-  "> HeartOS v2.0.1 - Personalized for her_name ❤️",
-  "> Author: Your_Name 🧑‍💻",
+  "> HeartOS v2.0.1 - Special Edition for the Most Wonderful Lady 🌹",
+  "> Author: Krishna (your caring friend) 🧑‍💻",
   "",
-  "> booting HeartOS...",
-  "> checking emotional modules...",
-  "> empathy.js ✅",
-  "> patience.config ✅",
-  "> sarcasmHandler.js ❌ (crashed at 8:03PM)",
-  "> running debugger...",
+  "> Starting HeartOS just for you...",
+  "> Checking all happiness modules...",
+  "> Warmth.js ✅",
+  "> Patience.config ✅",
+  "> JokesHandler.js ✅",
+  "> SarcasmHandler.js ❌ (not needed for you!)",
   "",
-  "> FOUND: tone.misinterpretationException",
-  "> patching... 💖",
-  "> deploying better_version.your_name()",
+  "> FOUND: kindness.infiniteException",
+  "> Fixing with extra love... 💖",
+  "> Loading best_version.forYou()",
   "",
-  "> logs saved to: /memories/her_name/laughter.log",
-  "> run program: smile.exe ?",
+  "> Memories saved to: /memories/PreciousMoments/happy_days.log",
+  "> Would you like to see a smile? (Type: smile)",
   "",
-  "> Would you like to continue this connection? (yes/no)"
+  "> Would you like to continue this lovely chat? (Type: yes or no)"
 ];
 
 let index = 0;
@@ -27,7 +27,7 @@ function typeLine() {
   if (index < lines.length) {
     output.innerHTML += lines[index] + "\n";
     index++;
-    setTimeout(typeLine, 700);
+    setTimeout(typeLine, 900);
   } else {
     input.disabled = false;
     input.focus();
@@ -43,26 +43,25 @@ input.addEventListener("keydown", function (e) {
 
     switch (command) {
       case "yes":
-        output.innerHTML += "> syncing hearts... ❤️ completed.\n";
-        output.innerHTML += "> Our love still alive.\n";
+        output.innerHTML += "> Thank you for staying! Your company makes everything brighter. ❤️\n";
         break;
       case "no":
-        output.innerHTML += "> closing session... but love.exe is still running in background.\n";
+        output.innerHTML += "> That's okay! Remember, you are always loved and welcome here. 🌷\n";
         break;
       case "smile":
-        output.innerHTML += "> launching smile.exe... 😊\n";
+        output.innerHTML += "> Here is a big smile for you! 😊\n";
+        output.innerHTML += "> You make the world a happier place just by being you.\n";
         break;
       case "her_name":
-        output.innerHTML += "> You are the root user of this heart system. 👑\n";
+        output.innerHTML += "> You are the heart and soul of this system. 👑\n";
         break;
       case "your_name":
-        output.innerHTML += "> The loyal developer who cares deeply. 🧑‍💻\n";
+        output.innerHTML += "> Krishna, your friend who is always here to help. 🧑‍💻\n";
         break;
       default:
-        output.innerHTML += `> command not found: ${command}\n`;
+        output.innerHTML += "> Sorry, I didn't understand that. Please type: yes, no, or smile.\n";
     }
 
     input.value = "";
     window.scrollTo(0, document.body.scrollHeight);
   }
-});
