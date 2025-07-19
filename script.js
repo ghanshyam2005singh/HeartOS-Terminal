@@ -27,7 +27,7 @@ function typeLine() {
   if (index < lines.length) {
     output.innerHTML += lines[index] + "\n";
     index++;
-    setTimeout(typeLine, 900);
+    setTimeout(typeLine, 700);
   } else {
     input.disabled = false;
     input.focus();
@@ -65,3 +65,4 @@ input.addEventListener("keydown", function (e) {
     input.value = "";
     window.scrollTo(0, document.body.scrollHeight);
   }
+});
